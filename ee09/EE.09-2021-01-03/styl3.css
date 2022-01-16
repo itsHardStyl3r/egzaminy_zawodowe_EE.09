@@ -1,0 +1,63 @@
+.flex {
+    display: flex;
+}
+
+.logo, .baner, .glowny, .stopka {
+    background-color: #FF7F50;
+}
+
+.logo {
+    width: 25%;
+}
+
+.baner {
+    text-align: center;
+    width: 75%;
+    font-size: 130%;
+}
+
+.baner, .logo {
+    height: 100px;
+}
+
+.glowny {
+    padding: 70px;
+}
+
+.lewy {
+    width: 40%;
+}
+
+.prawy {
+    width: 60%;
+    text-align: right;
+}
+
+.lewy, .prawy {
+    height: 400px;
+}
+
+.stopka {
+    padding: 20px;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #FFFAFA;
+}
+
+form {
+    padding: 80px;
+}
+
+table {
+    color: white;
+    text-align: center;
+    width: 80%;
+    border: 1px white dotted;
+}
+
+tr:hover {
+    background-color: #D3D3D3;
+    color: black;
+}
