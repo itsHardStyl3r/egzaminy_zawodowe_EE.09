@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Fabryka żelków</title>
+    <link rel="stylesheet" href="styl9.css">
+    <script>
+        function zamow() {
+            const ksztalt = document.getElementById("ksztalt").value;
+            const r = document.getElementById("r").value;
+            const g = document.getElementById("g").value;
+            const b = document.getElementById("b").value;
+
+            let zelek = "inny ksztalt";
+            if(ksztalt === '1') zelek = "miś";
+            else if(ksztalt === '2') zelek = "żabka";
+            else if(ksztalt === '3') zelek = "serce";
+
+            const p = document.createElement("p");
+            p.innerText = "Zamówiłeś żelka: " + zelek;
+            document.getElementById("zamow").after(p);
+
+            document.getElementById("wybrany").style.background = 'rgb(' + r + "," + g + "," + b + ')';
+        }
+    </script>
+</head>
+<body>
+<div class="flex">
+    <div class="gorny1">
+        <a href="index.html"><img src="logo.png" alt="logo fabryki"></a>
+    </div>
+    <div class="gorny2">
+        <a href="zamowienie.html">Zamówienie</a>
+    </div>
+</div>
+<div class="baner">
+    <h2>Zamów nasz produkt</h2>
+</div>
+<div class="flex">
+    <div class="lewy">
+        <h1>Oferta</h1>
+        <table>
+            <tr>
+                <th>Kształty</th>
+                <th>Kolory</th>
+            </tr>
+            <tr>
+                <td>
+                    <ol>
+                        <li>miś</li>
+                        <li>żabka</li>
+                        <li>serce</li>
+                    </ol>
+                </td>
+                <td>
+                    <ol>
+                        <li>czerwony</li>
+                        <li>niebieski</li>
+                        <li>żółty</li>
+                        <li>inny</li>
+                    </ol>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="prawy">
+        <label>Podaj numer kształtu:<br>
+            <input type="number" id="ksztalt" name="ksztalt"></label><br>
+        skomponuj swój kolor RGB:<br>
+        <label>R: <input type="number" id="r" name="r"></label>
+        <label>G: <input type="number" id="g" name="g"></label>
+        <label>B: <input type="number" id="b" name="b"></label><br>
+        <button id="zamow" onClick="zamow()">Zamów</button>
+        <br>
+        <button id="wybrany">Wybrany kolor</button>
+    </div>
+</div>
+<div class="stopka">
+    Autor: <em><a href="https://github.com/itsHardStyl3r/egzaminy_zawodowe_EE.09" target="_blank">itsHardStyl3r</a></em>
+</div>
+</body>
+</html>
