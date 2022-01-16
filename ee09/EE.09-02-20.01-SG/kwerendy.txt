@@ -1,0 +1,6 @@
+SELECT `model`, `kolor`, `stan` FROM `samochody` WHERE `rocznik`>2010;
+UPDATE `samochody` SET `kolor`='ciemny niebieski' WHERE `model`="Yaris";
+CREATE USER 'joanna'@'localhost' IDENTIFIED BY 'joan87$';
+GRANT CREATE, ALTER ON `samochody`.`samochody` TO 'joanna'@'localhost';
+
+(brak pewności co do 3. i 4.)

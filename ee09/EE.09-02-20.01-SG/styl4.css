@@ -1,0 +1,37 @@
+.flex {
+    display: flex;
+}
+
+body {
+    font-family: 'Arial', serif;
+}
+
+.lewy, .prawy {
+    background-color: rgb(255, 127, 80);
+    color: white;
+    width: 50%;
+    height: 410px;
+}
+
+.baner, .glowny {
+    background-color: rgb(220, 220, 220);
+    padding: 20px;
+    text-align: center;
+}
+
+.stopka-lewy, .stopka-prawy {
+    background-color: rgb(255, 127, 80);
+    color: white;
+    width: 50%;
+    height: 100px;
+}
+
+table, td {
+    border: 1px rgb(255, 127, 80) solid;
+    padding: 10px;
+    text-align: center;
+}
+
+a {
+    color: white;
+}
