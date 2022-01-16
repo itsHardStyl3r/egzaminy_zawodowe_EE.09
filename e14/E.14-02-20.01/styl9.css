@@ -1,0 +1,55 @@
+.flex {
+    display: flex;
+}
+
+body {
+    font-family: 'Georgia', serif;
+}
+
+.gorny1, .gorny2 {
+    background-color: rgb(197, 85, 160);
+    text-align: center;
+    width: 50%;
+    height: 180px;
+}
+
+.baner, .stopka {
+    background-color: rgb(246, 226, 222);
+    text-align: center;
+    height: 100px;
+    padding: 10px;
+}
+
+.lewy, .prawy {
+    background-color: rgb(197, 85, 160);
+    color: white;
+    width: 50%;
+    height: 400px;
+}
+
+.lewy {
+    float: left;
+}
+
+.prawy {
+    float: right;
+}
+
+.gorny2 a {
+    background: url('cukierki1.png');
+    padding-right: 70px;
+    padding-bottom: 120px;
+    font-size: 150%;
+    text-decoration: none;
+}
+
+table, td {
+    border: 2px blue solid;
+    margin: 20px;
+    padding: 10px;
+}
+
+h2 {
+    letter-spacing: 10px;
+    font-size: 200%;
+}
