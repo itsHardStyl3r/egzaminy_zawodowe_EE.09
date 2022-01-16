@@ -17,7 +17,7 @@
             const b = document.getElementById("b").value;
 
             const p = document.createElement("p");
-            p.innerText = "Zamówiłeś żelka: " + (ksztalt.value > 3 ? "inny ksztalt" : rodzaje.get(ksztalt.value));
+            p.innerText = "Zamówiłeś żelka: " + ((ksztalt.value > 3 || rodzaje.get(ksztalt.value) === undefined) ? "inny ksztalt" : rodzaje.get(ksztalt.value));
             document.getElementById("zamow").after(p);
 
             document.getElementById("wybrany").style.background = 'rgb(' + [r, g, b].join(',') + ')';
