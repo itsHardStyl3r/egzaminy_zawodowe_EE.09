@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Usługi kosmetyczne</title>
+    <link rel="stylesheet" href="styl.css">
+    <script>
+        const tekst = document.createElement("div");
+
+        function sprawdz() {
+            let cena = 0;
+
+            if (document.getElementById("piling").checked) cena += 45;
+            if (document.getElementById("maska").checked) cena += 30;
+            if (document.getElementById("masaz").checked) cena += 20;
+            if (document.getElementById("brwi").checked) cena += 5;
+
+            const button = document.getElementById("sprawdz");
+            tekst.innerText = "Cena zabiegów: " + cena;
+            button.after(tekst);
+        }
+    </script>
+</head>
+<body>
+<div class="lewy1">
+    <h2>W ofercie</h2>
+    <ul>
+        <li><a href="twarz.html">Zabiegi na twarz</a>
+            <ol>
+                <li>Piling</li>
+                <li>Maska</li>
+                <li>Regulacja brwi</li>
+            </ol>
+        </li>
+        <li>Masaż</li>
+        <li>Diety oczyszczające</li>
+    </ul>
+    <a href="index.html">Do strony głównej</a>
+</div>
+<div class="prawy1">
+    <h1>Salon Kosmetyczny</h1>
+</div>
+<div class="prawy2">
+    <h2>Sprawdź cenę swojej wizyty</h2>
+    <label><input type="checkbox" id="piling" name="piling">Piling</label><br>
+    <label><input type="checkbox" id="maska" name="maska">Maska</label><br>
+    <label><input type="checkbox" id="masaz" name="masaz">Masaż twarzy</label><br>
+    <label><input type="checkbox" id="brwi" name="brwi">Regulacja brwi</label><br>
+    <button id="sprawdz" onClick="sprawdz()">Sprawdź cenę</button>
+</div>
+<div class="lewy2">
+    <img src="obraz1.jpg" alt="Kosmetyczna">
+</div>
+<div class="stopka">
+    <p>Autor: <a href="https://github.com/itsHardStyl3r/egzaminy_zawodowe_EE.09" target="_blank">itsHardStyl3r</a></p>
+</div>
+</body>
