@@ -65,7 +65,7 @@ $mysqli = mysqli_connect("127.0.0.1", "root", "", "egzamin");
     </div>
 </div>
 <div class="stopka">
-    Autor: 00000000000
+    Autor: <a href="https://github.com/itsHardStyl3r/egzaminy_zawodowe_EE.09" target="_blank">itsHardStyl3r</a>
     <a href="kwerendy.txt">Zobacz kwerendy</a>
 </div>
 </body>
