@@ -1,0 +1,4 @@
+SELECT `imie`, `nazwisko` FROM `matematycy` WHERE `rok_urodzenia`>1700;
+SELECT `imie`, `nazwisko` FROM `matematycy` WHERE `liczba_publikacji` > 10 && `liczba_publikacji` < 30;
+SELECT COUNT(*) FROM `matematycy` WHERE `rok_urodzenia`>1750;
+CREATE TABLE `arytmetyka`.`publikacje` (`id` INT NOT NULL AUTO_INCREMENT, `tytul` TEXT NOT NULL, `rok` SMALLINT NOT NULL, PRIMARY KEY (`id`));

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Działania matematyczne</title>
+    <link rel="stylesheet" href="styl.css">
+    <script>
+        function math(operation) {
+            //dodajemy plus przed document, by odczytana wartość była liczbą, a nie tekstem ;)
+            const a = +document.getElementById("a").value;
+            const b = +document.getElementById("b").value;
+
+            let wynik = 0;
+            if (operation === "+") wynik = (a + b)
+            else if (operation === "-") wynik = (a - b)
+            else if (operation === "*") wynik = (a * b)
+            else if (operation === "/") wynik = (a / b)
+            else if (operation === "^") wynik = (a ** b)
+
+            const lastBtn = document.getElementsByTagName("button")[4];
+            const p = document.createElement("p");
+            p.innerText = "Wynik: " + wynik;
+            lastBtn.after(p);
+        }
+    </script>
+</head>
+<body>
+<div class="baner1">
+    <img src="logo.jpg" alt="matematyka">
+</div>
+<div class="baner2">
+    <h1>Pomocnik Matematyczny</h1>
+</div>
+<div class="baner3">
+    <a href="dzialania.html"><h4>Działania</h4></a>
+</div>
+<div class="baner4">
+    <a href="mnozenie.html"><h4>Tabliczka mnożenia</h4></a>
+</div>
+<div class="lewy">
+    <h3>Proste działania</h3>
+    <label>liczba A: <input id="a" name="a"></label><br>
+    <label>liczba B: <input id="b" name="b"></label><br>
+    <button value="+" onClick="math('+')">+</button>
+    <button value="-" onClick="math('-')">-</button>
+    <button value="*" onClick="math('*')">*</button>
+    <button value="/" onClick="math('/')">/</button>
+    <button value="^" onClick="math('^')">A^B</button>
+</div>
+<div class="prawy">
+    <ul>
+        <li>dodawanie</li>
+        <li>odejmowanie</li>
+        <li>mnożenie</li>
+        <li>dzielenie</li>
+        <li>potęgowanie</li>
+    </ul>
+</div>
+<div class="stopka">
+    <p>Autor: <a href="https://github.com/itsHardStyl3r/egzaminy_zawodowe_EE.09" target="_blank">itsHardStyl3r</a></p>
+</div>
+</body>
+</html>
