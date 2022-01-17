@@ -1,0 +1,58 @@
+.flex {
+    display: flex;
+}
+
+body {
+    font-family: 'Helvetica', serif;
+}
+
+.banerlewy, .banerprawy {
+    background-color: rgb(70, 130, 180);
+    color: white;
+    width: 25%;
+    height: 80px;
+    float: left;
+}
+
+.banersrodkowy {
+    background-color: rgb(70, 130, 180);
+    color: white;
+    width: 50%;
+    height: 80px;
+    text-align: center;
+    float: left;
+}
+
+.glowny {
+    background-color: rgb(224, 255, 255);
+    padding: 40px;
+    clear: both;
+}
+
+.lewy, .prawy {
+    background-color: rgb(70, 130, 180);
+    width: 50%;
+    height: 200px;
+    text-align: center;
+    float: left;
+}
+
+.stopka {
+    background-color: rgb(224, 255, 255);
+}
+
+table {
+    border: 1px blue solid;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px blue solid;
+}
+
+th {
+    border: 1px blue solid;
+    background-color: blue;
+    color: white;
+}
