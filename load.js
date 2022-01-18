@@ -6,6 +6,7 @@ let tags, extended;
 (async () => {
     tags = await (await get("https://api.github.com/repos/itsHardStyl3r/egzaminy_zawodowe_EE.09/git/trees/master?recursive=1")).json()
     extended = await (await get("https://raw.githubusercontent.com/itsHardStyl3r/egzaminy_zawodowe_EE.09/master/data.json")).json()
+    let now = new Date();
     for (const element of tags.tree) {
         const load = document.getElementById("load");
         if (element.path.includes("/")) {
@@ -20,6 +21,7 @@ let tags, extended;
                 date = extended.exams[type][name].date;
                 pdf = extended.exams[type][name].pdf;
                 title = extended.exams[type][name].title;
+                if (now.getFullYear() === +date.split("-")[2]) date += (" <span style='cursor: help' title='Egzamin z tego roku'>📣</span>");
                 text += "<tr>" +
                     "<td>" + name + " | " + title + "</td>" +
                     "<td>" + date + "</td>" +
