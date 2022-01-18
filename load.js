@@ -10,7 +10,7 @@ let tags, extended;
     for (const element of tags.tree) {
         const load = document.getElementById("load");
         if (element.path.includes("/")) {
-            let text = "", name = "", type = "", pdf = "", stack = "", date = "", title = "";
+            let text = "", name = "", type = "", pdf = "", stack = "", date = "", title = "", live = "";
             if (element.path.endsWith(".pdf")) {
                 pdf = element.path;
             }
@@ -21,9 +21,10 @@ let tags, extended;
                 date = extended.exams[type][name].date;
                 pdf = extended.exams[type][name].pdf;
                 title = extended.exams[type][name].title;
+                live = extended.exams[type][name].live;
                 if (now.getFullYear() === +date.split("-")[2]) date += (" <span style='cursor: help' title='Egzamin z tego roku'>📣</span>");
                 text += "<tr>" +
-                    "<td>" + name + " | " + title + "</td>" +
+                    "<td>" + name + " | " + title + (live != null ? " (<a href='http://hardstyl3r.ct8.pl/exams/" + name + "/" + live + "' target='_blank'>podgląd</a>)" : "") + "</td>" +
                     "<td>" + date + "</td>" +
                     "<td>" + stack + "</td>" +
                     "<td><a href='https://github.com/itsHardStyl3r/egzaminy_zawodowe_EE.09/tree/master/" + element.path + "/" + pdf + "'>zobacz</a>" +

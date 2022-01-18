@@ -5,7 +5,8 @@
         "title": "Fabryka żelków",
         "pdf": "e_14_2020_01_02_SG_kolor.pdf",
         "stack": "JavaScript",
-        "date": "20-01-2020"
+        "date": "20-01-2020",
+        "live": "index.html"
       }
     },
     "ee09": {
@@ -55,19 +56,22 @@
         "title": "Salon kosmetyczny",
         "pdf": "ee.09-04-20.06-SG.pdf",
         "stack": "JavaScript",
-        "date": "06-2020"
+        "date": "06-2020",
+        "live": "index.html"
       },
       "EE.09-02-20.01-SG": {
         "title": "Stacja paliw",
         "pdf": "ee_09_2020_01_02_SG_kolor.pdf",
         "stack": "JavaScript",
-        "date": "02-01-2020"
+        "date": "02-01-2020",
+        "live": "index.html"
       },
       "EE.09-04-19.06": {
         "title": "Pomocnik matematyczny",
         "pdf": "ee_09_2019_06_04_kolor.pdf",
         "stack": "JavaScript",
-        "date": "04-06-2019"
+        "date": "04-06-2019",
+        "live": "dzialania.html"
       }
     }
   }
