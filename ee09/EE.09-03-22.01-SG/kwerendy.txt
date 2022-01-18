@@ -1,0 +1,4 @@
+INSERT INTO `ratownicy`(`nrKaretki`, `ratownik1`, `ratownik2`, `ratownik3`) VALUES (20,'Adam Nowak','Jan Kowalski','Anna Nowakowska');
+SELECT `id`, `adres`, `ratownicy_id` FROM `zgloszenia` WHERE `dyspozytorzy_id`=4;
+CREATE USER 'adam'@'localhost' IDENTIFIED BY 'Adam6&';
+GRANT CREATE, ALTER, DELETE ON `ee09`.`ratownicy` TO 'adam'@'localhost';

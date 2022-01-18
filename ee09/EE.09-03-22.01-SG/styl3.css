@@ -1,0 +1,42 @@
+body {
+    font-family: 'Arial', serif;
+}
+
+.banerlewy, .banersrodkowy, .banerprawy, .stopkalewy, .stopkasrodkowy, .stopkaprawy {
+    background-color: SaddleBrown;
+    color: white;
+    height: 100px;
+    float: left;
+}
+
+.banerlewy, .stopkalewy {
+    width: 55%;
+    font-size: 120%;
+}
+
+.banersrodkowy, .stopkasrodkowy {
+    width: 25%;
+}
+
+.banerprawy, .stopkaprawy {
+    width: 20%;
+    text-align: right;
+}
+
+.glowny {
+    background-color: Snow;
+    padding: 70px;
+    clear: both;
+}
+
+a {
+    border: 2px SaddleBrown dotted;
+    background-color: Snow;
+    color: SaddleBrown;
+    padding: 20px;
+    line-height: 100px;
+}
+
+ol {
+    list-style-type: lower-alpha;
+}

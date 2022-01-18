@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Zespoły ratownicze</title>
+    <link rel="stylesheet" href="styl3.css">
+</head>
+<body>
+<div class="banerlewy">
+    <h2>Dodanie zespołu ratowniczego</h2>
+</div>
+<div class="banersrodkowy">
+    <p>Kontakt:<br>022 222 11 333</p>
+</div>
+<div class="banerprawy">
+    <img src="obraz.jpg" alt="ratownicy">
+</div>
+<div class="glowny">
+    <h3>Dodaj nowy zespół</h3>
+    <form method="POST" action="dodanie.php">
+        <label>Numer karetki:<br>
+            <input type="number" id="numer" name="numer"></label><br>
+        <label>Imię i nazwisko pierwszego ratownika:<br>
+            <input type="text" id="r1" name="r1"></label><br>
+        <label>Imię i nazwisko drugiego ratownika:<br>
+            <input type="text" id="r2" name="r2"></label><br>
+        <label>Imię i nazwisko trzeciego ratownika:<br>
+            <input type="text" id="r3" name="r3"></label><br>
+        <input type="reset" value="CZYŚĆ" id="reset" name="reset">
+        <input type="submit" value="DODAJ" id="submit" name="submit">
+    </form>
+</div>
+<div class="stopkalewy">
+    <a href="kwerendy.txt">Zobacz kwerendy</a>
+</div>
+<div class="stopkasrodkowy">
+    <h5>Przypominamy numery alarmowe</h5>
+    <ol>
+        <li>112</li>
+        <li>999</li>
+    </ol>
+</div>
+<div class="stopkaprawy">
+    <p>Autor: <a style="all: unset; cursor: pointer; text-decoration: underline"
+                 href="https://github.com/itsHardStyl3r/egzaminy_zawodowe_EE.09" target="_blank">itsHardStyl3r</a>
+    </p>
+</div>
+</body>
+</html>
