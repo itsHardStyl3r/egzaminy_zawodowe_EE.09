@@ -10,7 +10,7 @@ let tags, extended;
     for (const element of tags.tree) {
         const load = document.getElementById("load");
         if (element.path.includes("/")) {
-            let text = "", name = "", type = "", pdf = "", stack = "", date = "", title = "", live = "";
+            let text = "", name = "", type = "", pdf = "", stack = "", date = "", title = "", live = "", download = "";
             if (element.path.endsWith(".pdf")) {
                 pdf = element.path;
             }
@@ -22,6 +22,7 @@ let tags, extended;
                 pdf = extended.exams[type][name].pdf;
                 title = extended.exams[type][name].title;
                 live = extended.exams[type][name].live;
+                download = "https://kinolien.github.io/gitzip/?download=itsHardStyl3r/egzaminy_zawodowe_EE.09/tree/master/" + type + "/" + name;
                 if (now.getFullYear() === +date.split("-")[2]) date += (" <span style='cursor: help' title='Egzamin z tego roku'>📣</span>");
                 text += "<tr>" +
                     "<td>" + name + " | " + title + (live != null ? " (<a href='http://hardstyl3r.ct8.pl/exams/" + name + "/" + live + "' target='_blank'>podgląd</a>)" : "") + "</td>" +
@@ -30,7 +31,7 @@ let tags, extended;
                     "<td><a href='https://github.com/itsHardStyl3r/egzaminy_zawodowe_EE.09/tree/master/" + element.path + "/" + pdf + "'>zobacz</a>" +
                     " / <a href='https://github.com/itsHardStyl3r/egzaminy_zawodowe_EE.09/raw/master/" + element.path + "/" + pdf + "'>pobierz (.pdf)</a></td>" +
                     "<td><a href='https://github.com/itsHardStyl3r/egzaminy_zawodowe_EE.09/tree/master/" + element.path + "'>" +
-                    "<img style='max-width:16px; vertical-align: -2px' src=\"https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/github.svg\" alt='github icon'/> link</a></td></tr>"
+                    "<img style='max-width:16px; vertical-align: -2px' src=\"https://cdn.jsdelivr.net/npm/simple-icons@v6/icons/github.svg\" alt='github icon'/> link</a> / <a href='" + download + "' target='_blank'>pobierz</a></td></tr>"
                 load.innerHTML += text;
             }
         }
