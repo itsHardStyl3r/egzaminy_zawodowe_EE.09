@@ -1,0 +1,58 @@
+body {
+    font-family: 'Tahoma', serif;
+}
+
+.banerlewy, .banerprawy {
+    background-color: #003d33;
+    color: white;
+    text-align: center;
+    height: 50px;
+}
+
+.banerlewy {
+    width: 70%;
+    float: left;
+}
+
+.banerprawy {
+    width: 30%;
+    float: right;
+}
+
+.lewy {
+    background-color: #26a69a;
+    height: 550px;
+    width: 30%;
+    float: left;
+}
+
+.prawy {
+    background-color: #26a69a;
+    height: 550px;
+    width: 70%;
+    float: right;
+}
+
+.stopka {
+    background-color: #003d33;
+    color: white;
+}
+
+.wizytowka {
+    width: 400px;
+    margin: 30px;
+    text-align: center;
+    border: 1px #003d33 solid;
+}
+
+.wizytowka button {
+    background-color: #003d33;
+    color: white;
+    width: 100%;
+    height: 30px;
+    border: none;
+}
+
+.wizytowka button:hover {
+    background-color: #004c40;
+}
