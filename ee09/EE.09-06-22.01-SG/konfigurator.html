@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Style w JavaScript</title>
+    <link rel="stylesheet" href="styl6.css">
+    <script>
+        function zmienPrawy(button) {
+            document.getElementById("prawy").style.backgroundColor = button.value;
+        }
+
+        function zmienKolor(option) {
+            document.getElementById("prawy").style.color = option.value;
+        }
+
+        function zmienRozmiar(rozmiar) {
+            document.getElementById("prawy").style.fontSize = rozmiar.value;
+        }
+
+        function dodajRamke(checkbox) {
+            const images = document.getElementsByTagName("img");
+            for (let i = 0; i < images.length; i++) {
+                images[i].style.border = (checkbox.checked ? "1px white solid" : "none");
+            }
+        }
+
+        function punktorListy(input) {
+            const listItem = document.getElementsByTagName("ul");
+            for (let i = 0; i < listItem.length; i++) {
+                listItem[i].style.listStyleType = input.value;
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="flex">
+    <div id="lewy">
+        <h2>Konfigurator stylu</h2>
+        <p>Podaj kolor tła<br>
+            <button value="Indigo" onClick="zmienPrawy(this)">Indigo</button>
+            <button value="SteelBlue" onClick="zmienPrawy(this)">SteelBlue</button>
+            <button value="Olive" onClick="zmienPrawy(this)">Olive</button>
+        </p>
+        <p><label>Podaj kolor czcionki<br>
+            <select onChange="zmienKolor(this)">
+                <option>White</option>
+                <option>Tan</option>
+                <option>Bisque</option>
+                <option>Plum</option>
+            </select>
+        </label>
+        </p>
+        <p><label>Podaj rozmiar czczionki w procentach, np. 200%<br>
+            <input type="text" id="rozmiar" name="rozmiar" value="100%" onChange="zmienRozmiar(this)"></label>
+        </p>
+        <p>Czy rysunek ma mieć ramkę?<br>
+            <label>Rysuj ramkę <input type="checkbox" checked onChange="dodajRamke(this)"></label>
+        </p>
+        <p>Jaki jest typ punktora listy?<br>
+            <label>dysk <input type="radio" name="punktor" value="disc" checked onClick="punktorListy(this)"></label>
+            <label>kwadrat <input type="radio" name="punktor" value="square" onClick="punktorListy(this)"></label>
+            <label>okrąg <input type="radio" name="punktor" value="circle" onClick="punktorListy(this)"></label>
+        </p>
+    </div>
+    <div id="prawy">
+        <img src="gibraltar.jpg" alt="półwysep Gibraltar">
+        <ul>
+            <li>element 1</li>
+            <li>element 2</li>
+            <li>element 3</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.</p>
+    </div>
+</div>
+<div class="stopka">
+    Autor: <a href="https://github.com/itsHardStyl3r/egzaminy_zawodowe_EE.09" target="_blank">itsHardStyl3r</a>
+</div>
+</body>
+</html>

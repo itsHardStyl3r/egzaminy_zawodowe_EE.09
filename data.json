@@ -10,6 +10,13 @@
       }
     },
     "ee09": {
+      "EE.09-06-22.01-SG": {
+        "title": "Konfigurator stylu",
+        "pdf": "",
+        "stack": "JavaScript",
+        "date": "18-01-2022",
+        "live": "konfigurator.html"
+      },
       "EE.09-05-22.01-SG": {
         "title": "Wizytówka",
         "pdf": "",

@@ -1,0 +1,57 @@
+.flex {
+    display: flex;
+}
+
+body {
+    font-family: 'Georgia', serif;
+}
+
+#lewy {
+    background-color: Maroon;
+    color: white;
+    height: 600px;
+    width: 30%;
+}
+
+#prawy {
+    background-color: Maroon;
+    color: white;
+    height: 600px;
+    width: 70%;
+    overflow: auto;
+}
+
+.stopka {
+    background-color: DimGray;
+    color: white;
+    clear: both;
+}
+
+#prawy * {
+    float: left;
+}
+
+#prawy li {
+    clear: both;
+}
+
+p {
+    padding: 10px;
+}
+
+img {
+    padding: 10px;
+    border: 1px white solid;
+}
+
+button[value="Indigo"] {
+    background-color: Indigo;
+}
+
+button[value="SteelBlue"] {
+    background-color: SteelBlue;
+}
+
+button[value="Olive"] {
+    background-color: Olive;
+}
