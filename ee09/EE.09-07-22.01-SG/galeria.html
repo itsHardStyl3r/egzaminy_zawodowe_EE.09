@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="styl7.css">
+    <script>
+        function zmienGlowny(img){
+            document.getElementById("photo").src = img.src;
+        }
+
+        function onAndOff(){
+            const icon = document.getElementById("icon");
+            icon.src = (icon.src.endsWith("off.png") ? "icon-on.png" : "icon-off.png")
+        }
+    </script>
+</head>
+<body>
+<div class="baner">
+    <h2>Galeria miejsc ciekawych</h2>
+</div>
+<div class="glowny">
+    <img src="lanzarotte.jpg" alt="galeria" id="photo">
+</div>
+    <div class="lewy">
+        <h3>Przeglądaj zdjęcia</h3>
+        <img src="lanzarotte.jpg" alt="lanzarotte" onClick="zmienGlowny(this)">
+        <img src="pekin.jpg" alt="pekin" onClick="zmienGlowny(this)">
+        <img src="serengeti.jpg" alt="serengeti" onClick="zmienGlowny(this)">
+        <img src="wenecja.jpg" alt="wenecja" onClick="zmienGlowny(this)">
+        <img src="tajlandia.jpg" alt="tajlandia" onClick="zmienGlowny(this)">
+    </div>
+    <div class="prawy">
+        <h3>Obrazy w naszej galerii</h3>
+        <table>
+            <tr>
+                <td>Europa</td>
+                <td>Azja</td>
+                <td>Afryka</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>2</td>
+                <td>1</td>
+            </tr>
+        </table>
+        <p>Polub nas <img src="icon-off.png" id="icon" onClick="onAndOff()"></p>
+        <a href="https://pixabay.com" target="_blank">Odkryj więcej zdjęć</a>
+    </div>
+<div class="stopka">
+    Autor: <a href="https://github.com/itsHardStyl3r/egzaminy_zawodowe_EE.09" target="_blank">itsHardStyl3r</a>
+</div>
+</body>
+</html>

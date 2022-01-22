@@ -10,6 +10,13 @@
       }
     },
     "ee09": {
+      "EE.09-07-22.01-SG": {
+        "title": "Galeria",
+        "pdf": "",
+        "stack": "JavaScript",
+        "date": "19-01-2022",
+        "live": "galeria.html"
+      },
       "EE.09-06-22.01-SG": {
         "title": "Konfigurator stylu",
         "pdf": "",
