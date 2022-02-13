@@ -28,43 +28,50 @@
         "title": "Wizytówka",
         "pdf": "",
         "stack": "PHP",
-        "date": "18-01-2022"
+        "date": "18-01-2022",
+        "live": "uzytkownicy.php"
       },
       "EE.09-04-22.01-SG": {
         "title": "Forum z psami",
         "pdf": "",
         "stack": "PHP",
-        "date": "18-01-2022"
+        "date": "18-01-2022",
+        "live": "logowanie.php"
       },
       "EE.09-03-22.01-SG": {
         "title": "Pogotowie",
         "pdf": "",
         "stack": "PHP",
-        "date": "17-01-2022"
+        "date": "17-01-2022",
+        "live": "ratownicy.html"
       },
       "EE.09-02-22.01-SG": {
         "title": "Prognoza pogody",
         "pdf": "",
         "stack": "PHP",
-        "date": "17-01-2022"
+        "date": "17-01-2022",
+        "live": "pogoda.php"
       },
       "EE.09-01-22.01-SG": {
         "title": "Karta wędkarska",
         "pdf": "",
         "stack": "PHP",
-        "date": "17-01-2022"
+        "date": "17-01-2022",
+        "live": "karta.html"
       },
       "EE.09-2021-01-05": {
         "title": "Lotnisko (przyloty)",
         "pdf": "ee_09_2021_01_05_sg.pdf",
         "stack": "PHP",
-        "date": "05-01-2021"
+        "date": "05-01-2021",
+        "live": "lotnisko.php"
       },
       "EE.09-2021-01-03": {
         "title": "Kalkulator BMI",
         "pdf": "ee_09_2021_01_03_sg.pdf",
         "stack": "PHP",
-        "date": "03-01-2021"
+        "date": "03-01-2021",
+        "live": "bmi.php"
       },
       "EE.09-04-20.06-SG": {
         "title": "Salon kosmetyczny",
